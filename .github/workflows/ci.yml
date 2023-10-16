@@ -18,8 +18,21 @@ jobs:
         with:
           node-version: '14'
 
+      - name: List Files
+        run: ls
+
+      - name: Print Working Directory
+        run: pwd
+
+      - name: List Files in ClientApp
+        run: ls ClientApp
+
       - name: Install Dependencies
-        run: npm install
+        run: |
+            cd ClientApp
+            npm install
 
       - name: Run Tests
-        run: npm test
+        run: |
+            cd ClientApp
+            npm test

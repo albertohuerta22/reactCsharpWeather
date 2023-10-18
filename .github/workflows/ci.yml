@@ -1,4 +1,4 @@
-﻿name: Alberto Test 1 Node.js CI
+﻿name: Build and Test Workflow
 
 on:
   push:
@@ -32,7 +32,12 @@ jobs:
             cd ClientApp
             npm install
 
-      - name: Run Tests
+      - name: Run Client Tests
         run: |
             cd ClientApp
             npm test
+
+      - name: Run Unit Tests
+        run: |
+            cd Server/Tests
+            dotnet test

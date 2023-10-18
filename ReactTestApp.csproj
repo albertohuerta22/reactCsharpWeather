@@ -30,6 +30,7 @@
     <None Remove="Server\Controllers\" />
     <None Remove="Server\Tests\" />
     <None Remove="Server\Tests\Controllers\" />
+    <None Include="Server\Tests\ReactTestAppTests.csproj" />
   </ItemGroup>
 
   <ItemGroup>

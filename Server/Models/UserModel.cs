@@ -1,11 +1,14 @@
 ﻿using System;
-namespace ReactTestApp.Server.Models
+namespace Server.Models
 {
-	public class EmptyClass
-	{
-		public EmptyClass()
-		{
-		}
-	}
+   // Models/User.cs
+    public class User
+    {
+        public int Id { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        // Add other properties as needed
+    }
+
 }
 

@@ -1,8 +1,7 @@
 import Counter from "./components/Counter";
-import LoginForm from "./components/EmptyTSFile";
 import  FetchData  from "./components/FetchData";
 import { Home } from "./components/Home";
-import LoginForm from "./components/Login"
+import LoginForm from "./components/Login.jsx";
 
 const AppRoutes = [
   {
@@ -16,7 +15,8 @@ const AppRoutes = [
   {
     path: '/fetch-data',
     element: <FetchData />
-  }{
+    },
+    {
     path: '/login',
     element: <LoginForm/>
   }

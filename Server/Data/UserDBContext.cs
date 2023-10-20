@@ -16,6 +16,15 @@ namespace Server.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configure your entity relationships and constraints here
+
+            // Seed data
+            modelBuilder.Entity<User>().HasData(
+                new User { Id = 1, Username = "user1", Password = "password1" },
+                new User { Id = 2, Username = "user2", Password = "password2" }
+                // Add more seed data as needed
+            );
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

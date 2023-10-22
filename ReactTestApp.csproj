@@ -42,6 +42,7 @@
     <None Include="Server\Tests\ReactTestAppTests.csproj" />
     <None Remove="Server\Models\" />
     <None Remove="Server\Data\" />
+    <None Remove="Server\Controllers\RegistrationController\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +53,7 @@
     <Folder Include="Server\Tests\Controllers\" />
     <Folder Include="Server\Models\" />
     <Folder Include="Server\Data\" />
+    <Folder Include="Server\Controllers\RegistrationController\" />
   </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->

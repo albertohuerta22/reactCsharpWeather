@@ -21,7 +21,7 @@ const AppRoutes = [
    {
     path: '/login',
     element: <LoginForm/>
-  }
+  },
   {
     path: '/registration',
     element: <RegistrationForm/>
